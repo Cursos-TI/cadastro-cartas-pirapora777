@@ -6,7 +6,7 @@
 
 int main() {
   // Área para definição das variáveis para armazenar as propriedades das cidades
-//Declaração de variáveis
+
     // Carta 1
 
     // Variável estado
@@ -24,7 +24,6 @@ int main() {
     // Variável número de pontos turísticos
     int NPTC1;
 
-    //Declaração de variáveis
     // Carta 2
 
     // Variável estado
@@ -42,7 +41,7 @@ int main() {
     // Variável número de pontos turísticos
     int NPTC2;
 
-    // Leitura dos dados da carta 1
+      // Área para entrada de dados carta 1
 
         printf("Digite o nome do estado da carta 1: \n");
         scanf("%c, &ESTC1");
@@ -59,7 +58,7 @@ int main() {
         printf("Digite o número de pontos turísticos da carta 1: \n");
         scanf("%d, &NPTC1");
 
-        // Leitura dos dados da carta 2
+      // Área para entrada de dados carta 2
 
         printf("Digite o nome do estado da carta 2: \n");
         scanf("%c, &ESTC2");
@@ -75,6 +74,8 @@ int main() {
         scanf("%f, &PIBC2");
         printf("Digite o número de pontos turísticos da carta 2: \n");
         scanf("%d, &NPTC2");
+
+        // Área para exibição dos dados da cidade
 
         //Imprimindo dados carta 1
     
@@ -97,9 +98,8 @@ int main() {
         printf("O número de pontos turísticos da cidade da carta 2 é: %d \n", NPTC2);
 
         return 0;
-  // Área para entrada de dados
+  
+  
 
-  // Área para exibição dos dados da cidade
 
-return 0;
 } 
