@@ -16,6 +16,8 @@ int main() {
     float AREAC1;
     float PIBC1;
     int NPTC1;
+    float PIBPERCAPTA1;
+    float DENSIDADEPOP1;
 
     // Carta 2
     
@@ -26,6 +28,8 @@ int main() {
     float AREAC2;
     float PIBC2;
     int NPTC2;
+    float PIBPERCAPTA2;
+    float DENSIDADEPOP2;
 
       // Área para entrada de dados carta 1
 
@@ -73,9 +77,20 @@ int main() {
         printf("Digite o número de pontos turísticos da carta 2: \n");
         scanf("%d", &NPTC2);
 
+        // Cálculo do PIB PERCAPTA
+
+        PIBPERCAPTA1 = (PIBC1 / POPC1);
+        PIBPERCAPTA2 = (PIBC2 / POPC2);
+
+        // Cálculo da densidade populacional
+
+        DENSIDADEPOP1 = (POPC1 / AREAC1);
+        DENSIDADEPOP2 = (POPC2 / AREAC2);
+
+
         // Área para exibição dos dados da cidade
 
-        //Imprimindo dados carta 1
+        //Imprimindo dados carta  / 1
     
         printf("O estado da cidade 1 é: %c \n", ESTC1);
         printf("O código da carta da cidade 1 é: %c \n", CODC1);
@@ -84,6 +99,8 @@ int main() {
         printf("A área em KM² da cidade da carta 1 é: %f \n", AREAC1);
         printf("O PIB da cidade da carta 1 é: %f \n", PIBC1);
         printf("O número de pontos turísticos da cidade da carta 1 é: %d \n", NPTC1);
+        printf("O PIB Percapta da cidade 1 É: %.2f \n", PIBPERCAPTA1);
+        printf("A densidade populacional da cidade 1 é: %.2f \n", DENSIDADEPOP1);
 
         //Imprimindo dados carta 2
     
@@ -94,7 +111,8 @@ int main() {
         printf("A área em KM² da cidade da carta 2 é: %f \n", AREAC2);
         printf("O PIB da cidade da carta 2 é: %f \n", PIBC2);
         printf("O número de pontos turísticos da cidade da carta 2 é: %d \n", NPTC2);
-
+        printf("O PIB Percapta da cidade 2 É: %.2f \n", PIBPERCAPTA2);
+        printf("A densidade populacional da cidade 2 é: %.2f \n", DENSIDADEPOP2);
         return 0;
   
   
